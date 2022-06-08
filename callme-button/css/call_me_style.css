@@ -1,0 +1,51 @@
+
+.call_me{
+  display:none;
+}
+
+@media(max-width:960px){
+
+.call_me{
+	background:#36622b;
+	width:70px;
+	height:70px;
+	position:fixed;
+	bottom:20px;
+	border-radius:50%;
+	border:solid #fff 5px;
+	box-shadow:1px 0px 10px #000000;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+	box-sizing:border-box;
+animation:mobilka 1s  infinite linear ;
+z-index:3000;
+	}
+
+  .call__me__left{
+    left:15px;
+  }
+
+  .call__me__right{
+    right:15px;
+  }
+
+ 
+  .call__me__mobile img{
+filter:invert(100);
+width:40px
+  }
+
+
+@keyframes mobilka{
+	
+	0%{transform:rotate(-2deg)}
+	50%{transform:rotate(2deg)}
+	100%{transform:rotate(-2deg)}
+	
+}
+
+}
+
+
